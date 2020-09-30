@@ -1,0 +1,12 @@
+input {
+    margin-left: 10px;
+}
+h3 > span {
+    color: red;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}

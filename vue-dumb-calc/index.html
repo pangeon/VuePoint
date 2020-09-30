@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Vue Dumb-Calc</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Vue Dumb-Calc</h1>
+        <h3>Enter data:</h3> 
+        <p>First Number<input type="number" v-bind:value="firstNum" v-on:input="firstNum = parseFloat($event.target.value)"/></p>
+        <p>Second Number<input type="number" v-bind:value="secondNum" v-on:input="secondNum = parseFloat($event.target.value)"/></p>
+        
+        <h3>Result [SUM]  <span>{{firstNum + secondNum}}</span></h3>
+        <h3>Result [MIN]  <span>{{firstNum - secondNum}}</span></h3>
+        <h3>Result [MULT] <span>{{firstNum * secondNum}}</span></h3>
+        <h3>Result [DIV]  <span>{{firstNum / secondNum}}</span></h3>
+        <h3>Result [POW]  <span>{{firstNum ** secondNum}}</span></h3>
+        <button v-on:click="reset()">RESET</button>
+
+        <p>Square <input type="text" v-on:input="sqrt"/></p>
+        <h3>Result [SQRT] <span>{{square}}</span></h3>
+        <h3>Result [SQRT4] <span>{{sqrt4()}}</span></h3>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
