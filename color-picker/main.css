@@ -1,0 +1,19 @@
+#app {
+    display: flex;
+    justify-content: center;
+}
+.flex-container-wrap {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
+#app > .flex-container-wrap > div  {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightsteelblue;
+}
+.red {
+    background-color: red;
+}
