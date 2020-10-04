@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
 }
+#info-button {
+    display: flex;
+    justify-content: center;
+}
 .flex-container-wrap {
     margin-top: 10%;
     display: flex;
@@ -13,6 +17,14 @@
     width: 30px;
     height: 30px;
     border: 1px solid lightsteelblue;
+}
+.info-text-div {
+    background: whitesmoke;
+    border: yellowgreen solid 1px;
+    padding: 2%;
+    border-radius: 3%;
+    font-size: 20px;
+    text-align: center;
 }
 .red {
     background-color: red;
