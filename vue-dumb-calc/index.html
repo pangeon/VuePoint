@@ -10,8 +10,8 @@
     <div id="app">
         <h1>Vue Dumb-Calc</h1>
         <h3>Enter data:</h3> 
-        <p>First Number<input type="number" v-bind:value="firstNum" v-on:input="firstNum = parseFloat($event.target.value)"/></p>
-        <p>Second Number<input type="number" v-bind:value="secondNum" v-on:input="secondNum = parseFloat($event.target.value)"/></p>
+        <p>First Number<input type="number" :value="firstNum" @input="firstNum = parseFloat($event.target.value)"/></p>
+        <p>Second Number<input type="number" :value="secondNum" @input="secondNum = parseFloat($event.target.value)"/></p>
         
         <h3>Result [SUM]  <span>{{firstNum + secondNum}}</span></h3>
         <h3>Result [MIN]  <span>{{firstNum - secondNum}}</span></h3>
@@ -20,7 +20,7 @@
         <h3>Result [POW]  <span>{{firstNum ** secondNum}}</span></h3>
         <button v-on:click="reset()">RESET</button>
 
-        <p>Square <input type="text" v-on:input="sqrt"/></p>
+        <p>Square <input type="text" @input="sqrt"/></p>
         <h3>Result [SQRT] <span>{{square}}</span></h3>
         <h3>Result [SQRT4] <span>{{sqrt4()}}</span></h3>
         

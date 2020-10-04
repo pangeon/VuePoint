@@ -11,41 +11,41 @@
         <div class="flex-container-wrap">
             <!-- Drawing section -->
                 <!-- ROW 1 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 2 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 3 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 4 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 5 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 6 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 7 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 8 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
                 <!-- ROW 9 -->
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
-                <div v-on:click="draw"></div><div v-on:click="draw"></div><div v-on:click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
+                <div @click="draw"></div><div @click="draw"></div><div @click="draw"></div>
             <!-- Drawing section -->
 
             <!-- Info section -->
@@ -53,20 +53,20 @@
                     v-html="headerHTML">
                 </span>
                 <button
-                    v-on:click="showInfoHiddenButton" 
-                    v-bind:style="visibleStyle">
+                    @click="showInfoHiddenButton" 
+                    :style="visibleStyle">
                     {{buttonDesc}}
                 </button>
                 <button
-                    v-on:click="reset" 
-                    v-bind:style="visibleStyle">
+                    @click="reset" 
+                    :style="visibleStyle">
                     Reset
                 </button>
                 <p 
                     class="info-text-div"
                     v-html="contentOfInfoSection"
-                    v-on:click="hiddenInfoShowButton" 
-                    v-bind:style="invsibileStyle">
+                    @click="hiddenInfoShowButton" 
+                    :style="invsibileStyle">
                 </p>
             <!-- Info section -->
     </div>
