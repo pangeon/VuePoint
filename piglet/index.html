@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Piglet</title>
+</head>
+<body>
+    <div id="app">
+        <div class="gui-box">
+            <h3>Which girl you want to see ?</h3>
+            <p><input v-model="first" type="checkbox">Anabelle</p>
+            <p><input v-model="second" type="checkbox">Monica</p>
+            <p><input v-model="third" type="checkbox">Pamela</p>
+            <p><input v-model="fourth" type="checkbox">Patricia</p>
+            <p><input v-model="fiveth" type="checkbox">Sue</p>
+            <p><input v-model="sixth" type="checkbox">Veronica</p>
+            <p><input v-model="seventh" type="checkbox">Claudia</p>
+            <p><input v-model="eighth" type="checkbox">Kacey</p>
+            <p><input v-model="nineth" type="checkbox">Natalie</p>
+        </div>
+        <div class="flex-container-wrap">
+            <div><img src="img/girl-1.jpg" alt="girl 1" :style="first ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-2.jpg" alt="girl 2" :style="second ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-3.jpg" alt="girl 3" :style="third ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-4.jpg" alt="girl 4" :style="fourth ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-5.jpg" alt="girl 5" :style="fiveth ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-6.jpg" alt="girl 6" :style="sixth ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-7.jpg" alt="girl 7" :style="seventh ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-8.jpg" alt="girl 8" :style="eighth ? 'display: block' : 'display: none'"></div>
+            <div><img src="img/girl-9.jpg" alt="girl 9" :style="nineth ? 'display: block' : 'display: none'"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
